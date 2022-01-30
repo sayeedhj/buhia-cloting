@@ -1,3 +1,9 @@
+var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
 const close = document.getElementById('close');
@@ -28,3 +34,8 @@ SmallImg[1].onclick = function(){
     MainImg.src = SmallImg[1].src;}
 SmallImg[2].onclick = function(){
     MainImg.src = SmallImg[2].src;}
+
+
+
+
+    
