@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUHIA Clothing - Home</title>
+    <title>BUHIA Clothing - Cart</title>
     <!-- Linking Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,8 +76,11 @@
                     <td>Chocolate Color Burkha</td>
 
                     <td>2499৳</td>
-                    <td><input type="Number" value="1"></td>
-                    <td>2499৳</td>
+                    <td> <button id="product1-minus"><i class="fas fa-minus"></i></button>
+                        <input id="number1-input" type="Number" value="1">
+                        <button id="product1-plus"><i class="fas fa-plus"></i></button>
+                    </td>
+                    <td><span id="product1-total">2499</span>৳</td>
 
                 </tr>
                 <tr>
@@ -85,21 +88,15 @@
                     <td><img src="images/Burkha-7.jpg" alt=""></td>
                     <td>Olive Color Burkha</td>
 
-                    <td>2999৳</td>
-                    <td><input type="Number" value="1"></td>
-                    <td>2999৳</td>
+                    <td>2499৳</td>
+                    <td> <button id="product2-minus"><i class="fas fa-minus"></i></button>
+                        <input id="number2-input" type="Number" value="1">
+                        <button id="product2-plus"><i class="fas fa-plus"></i></button>
+                    </td>
+                    <td> <span id="product2-total">2499</span>৳</td>
 
                 </tr>
-                <tr>
-                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="images/Burkha-8.jpg" alt=""></td>
-                    <td>Light Brown Color Burkha</td>
 
-                    <td>2499৳</td>
-                    <td><input type="Number" value="1"></td>
-                    <td>2499৳</td>
-
-                </tr>
             </tbody>
         </table>
     </section>
@@ -118,7 +115,7 @@
             <table>
                 <tr>
                     <td>Cart Subtotal</td>
-                    <td>2499৳</td>
+                    <td><span id="cart-subtotal">4998</span> ৳</td>
                 </tr>
                 <tr>
                     <td>Shipping</td>
@@ -126,10 +123,10 @@
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>2649৳</strong></td>
+                    <td><strong> <span id="cart-total">5148</span>৳</strong></td>
                 </tr>
             </table>
-            <button class="normal"> Procced to checkout</button>
+            <button class="normal" id="cckl"> Procced to checkout</button>
         </div>
     </section>
 
@@ -183,7 +180,7 @@
         </p>
     </div>
     <!-- Linking JavaScript File -->
-    <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
